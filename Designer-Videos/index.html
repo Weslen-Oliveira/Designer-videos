@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Vídeos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+      gap: 20px; /* Espaçamento entre os vídeos */
+    }
+
+    .video-grid video {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .video-grid video:hover {
+      transform: scale(1.03); /* Efeito leve de zoom ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Meus Trabalhos com Design Gráfico</h1>
+
+  <div class="video-grid">
+    <!-- Repita este bloco 12 vezes com vídeos diferentes -->
+    <video src="videos/video1.mp4" muted></video>
+    <video src="videos/video2.mp4" muted></video>
+    <video src="videos/video3.mp4" muted></video>
+    <video src="videos/video4.mp4" muted></video>
+    <video src="videos/video5.mp4" muted></video>
+    <video src="videos/video6.mp4" muted></video>
+    <video src="videos/video7.mp4" muted></video>
+    <video src="videos/video8.mp4" muted></video>
+    <video src="videos/video9.mp4" muted></video>
+    <video src="videos/video10.mp4" muted></video>
+    <video src="videos/video11.mp4" muted></video>
+    <video src="videos/video12.mp4" muted></video>
+  </div>
+
+  <script>
+    // Quando o mouse passa por cima, toca o vídeo
+    const videos = document.querySelectorAll('video');
+    videos.forEach(video => {
+      video.addEventListener('mouseenter', () => {
+        video.play();
+      });
+
+      video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0; // Reinicia o vídeo do começo
+      });
+    });
+  </script>
+
+</body>
+</html>
