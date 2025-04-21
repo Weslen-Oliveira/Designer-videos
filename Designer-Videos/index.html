@@ -3,69 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio de Vídeos</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      margin: 0;
-      padding: 20px;
-    }
+  <link rel="stylesheet" href="css/style.css">
+  <title>Designer- Gráficos-3D</title>
 
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-      gap: 20px; /* Espaçamento entre os vídeos */
-    }
-
-    .video-grid video {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    .video-grid video:hover {
-      transform: scale(1.03); /* Efeito leve de zoom ao passar o mouse */
-    }
-  </style>
 </head>
 <body>
+  <header class="header glass efeito" id="header">
+    <div class="header__nav">
+      <div class="header__logo">
+        <img src="img/logo-prata.png" alt="">
+      </div>
+      <div class="header__menu">
+        <ul>
+          <li><a href="#">Artes-3D</a></li>
+          <li><a href="#">Vídeos-3D</a></li>
+          <li><a href="#">sobre</a></li>
+        </ul>
+      </div>
+    </div>
+    <h1 class="efeito">Designer Gráficos-3D.</h1>
+    <h2 class="efeito">A arte de comunicar através do design</h2>
+    <div class="header__div">
+      <a href="" class="header__div-faleconosco pulsate-fwd">Fale Conosco</a>
+    </div>
+  </header>
 
-  <h1>Meus Trabalhos com Design Gráfico</h1>
 
   <div class="video-grid">
     <!-- Repita este bloco 12 vezes com vídeos diferentes -->
-    <video src="videos/video1.mp4" muted></video>
-    <video src="videos/video2.mp4" muted></video>
-    <video src="videos/video3.mp4" muted></video>
-    <video src="videos/video4.mp4" muted></video>
-    <video src="videos/video5.mp4" muted></video>
-    <video src="videos/video6.mp4" muted></video>
-    <video src="videos/video7.mp4" muted></video>
-    <video src="videos/video8.mp4" muted></video>
-    <video src="videos/video9.mp4" muted></video>
-    <video src="videos/video10.mp4" muted></video>
-    <video src="videos/video11.mp4" muted></video>
-    <video src="videos/video12.mp4" muted></video>
+    <div class="div__video">
+      <video src="videos/Glitterdust Logo Reveal_1080p.mp4" muted></video>
+      <h2 class="titulo__video">Glitterdust Logo</h2>
+    </div>
+    <video src="videos/Crushing Asteroid Intro_1080p (2).mp4" muted></video>
+    <video src="videos/3D Tech Logo Reveal_1080p.mp4" muted></video>
+    <video src="videos/Blazing Cube Logo_1080p.mp4" muted></video>
+    <video src="videos/HighTech Circuit Intro_1080p.mp4" muted></video>
+    <video src="videos/Igniting Logo Reveal_1080p.mp4" muted></video>
+    <video src="videos/Solid Logo Reveal_1080p.mp4" muted></video>
+    <video src="videos/Futuristic HiTech Intro_1080p (1).mp4" muted></video>
+    <video src="videos/Asphalt Destruction Logo Reveal_1080p.mp4" muted></video>
+    <video src="videos/HighVoltage Lightning Logo_1080p.mp4" muted></video>
+    <video src="videos/Steel Power Logo Reveal_1080p.mp4" muted></video>
+    <video src="videos/Minimalist Logo Reveal_1080p.mp4" muted></video>
   </div>
 
-  <script>
-    // Quando o mouse passa por cima, toca o vídeo
-    const videos = document.querySelectorAll('video');
-    videos.forEach(video => {
-      video.addEventListener('mouseenter', () => {
-        video.play();
-      });
+  <section class="sessao__section">
+    <div class="sessao__section__whatsapp card">
+      <h1 class="sessao__section__titulo">whatsapp</h1>
+      <h3>Entre em Contato  </h3>
+      <div class="sessao__section__logo">
+        <p>(35) 99999-9999</p>
+        <a href=""><img src="img/whatsapp-color-svgrepo-com.svg" alt="" class="logo"></a>
+      </div>
+      <div class="header__div">
+        <a href="" class="header__div-faleconosco pulsate-fwd">Fale Conosco</a>
+      </div>
+    </div>
+    <div class="sessao__section__instagram card">
+      <h1 class="sessao__section__titulo">instagram</h1>
+      <h3>Entre em Contato  </h3>
+      <div class="sessao__section__logo">
+        <p>@instagram.com</p>
+        <a href=""><img src="img/instagram-1-svgrepo-com.svg" alt="" class="logo"></a>
+      </div>
+      <div class="header__div">
+        <a href="" class="header__div-faleconosco pulsate-fwd">Fale Conosco</a>
+      </div>
+    </div>
+    <div class="sessao__section__facebook card">
+      <h1 class="sessao__section__titulo">facebook</h1>
+      <h3>Entre em Contato  </h3>
+      <div class="sessao__section__logo">
+        <p>@facebook</p>
+        <a href=""><img src="img/facebook-color-svgrepo-com.svg" alt="" class="logo"></a>
+      </div>
+      <div class="header__div">
+        <a href="" class="header__div-faleconosco pulsate-fwd">Fale Conosco</a>
+      </div>
+    </div>
+   
+  </section>
+  <footer class="footer">
+    <p>Criado por Weslen Oliveira</p>
+  </footer>
 
-      video.addEventListener('mouseleave', () => {
-        video.pause();
-        video.currentTime = 0; // Reinicia o vídeo do começo
-      });
-    });
-  </script>
-
+ 
+  <script src="js/script.js"></script>
 </body>
 </html>

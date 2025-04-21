@@ -1,0 +1,12 @@
+.footer{
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(-45deg, #0a0a0a, #161616, #2c2c2c, #363636) no-repeat;
+    background-size: 300% 300%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1em;
+    color: #adb0b5;
+}
+
+
