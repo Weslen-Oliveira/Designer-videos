@@ -2,7 +2,6 @@
     padding: 2em 0em;
     font-family: "Poller One", serif;
     width: 100%;
-    height: 20%;
     text-align: center;
     background: linear-gradient(-45deg, #0a0a0a, #161616, #2c2c2c, #363636) no-repeat;
 
@@ -23,8 +22,9 @@
     animation: gradient 10s ease infinite;
     background: linear-gradient(-20deg, #626367, #fcfcfc, #d7d8da, #adb0b5) no-repeat;
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 300% 300%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
 }
 h2{
     font-size: 1.5em;
@@ -33,8 +33,9 @@ h2{
     animation: gradient 10s ease infinite;
     background: linear-gradient(-20deg, #626367, #fcfcfc, #d7d8da, #adb0b5) no-repeat;
     -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 300% 300%; 
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%; 
 }
 .header__nav{
     padding-inline: 3em;
@@ -59,6 +60,7 @@ h2{
     animation: gradient 10s ease infinite;
     background: linear-gradient(-20deg, #626367, #fcfcfc, #d7d8da, #adb0b5) no-repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
     display: flex;
@@ -104,8 +106,8 @@ h2{
     }
   }
   .pulsate-fwd {
-    -webkit-animation: pulsate-fwd 0.5s 3s 3 ;
-            animation: pulsate-fwd 0.5s 3s 10 ;
+    -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+            animation: pulsate-fwd 0.5s ease-in-out infinite both;
   }
   @-webkit-keyframes pulsate-fwd {
     0% {
