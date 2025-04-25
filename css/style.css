@@ -5,6 +5,7 @@
 @import 'videos.css';
 @import 'header.css';
 @import 'section.css';
+@import 'sectionFoto.css';
 @import 'footer.css';
 
 *{
@@ -19,8 +20,21 @@ html, body {
     animation: gradient 10s ease infinite;
     background: linear-gradient(-45deg, #0a0a0a, #161616, #2c2c2c, #363636) no-repeat;
     background-size: 300% 300%;
-
+ 
   }
+  .botao-inicio{
+    font-size: 0.3em;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+    background: linear-gradient(-20deg, #b88a44, #e39b0d, #b88a44, #e0aa3e) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+}
   @keyframes gradient{
     0%{
         background-position: 0 50%;

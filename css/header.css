@@ -19,7 +19,7 @@
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
     font-size: 5em;
     animation: gradient 10s ease infinite;
-    background: linear-gradient(-20deg, #626367, #fcfcfc, #d7d8da, #adb0b5) no-repeat;
+    background: linear-gradient(-20deg, #b88a44, #e39b0d, #b88a44, #e0aa3e) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,7 +30,7 @@ h2{
     line-height: 3em;
     text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
     animation: gradient 10s ease infinite;
-    background: linear-gradient(-20deg, #626367, #fcfcfc, #d7d8da, #adb0b5) no-repeat;
+    background: linear-gradient(-20deg, #b88a44, #e39b0d, #b88a44, #e0aa3e) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,7 +57,7 @@ h2{
 }
 .header ul{
     animation: gradient 10s ease infinite;
-    background: linear-gradient(-20deg, #626367, #fcfcfc, #d7d8da, #adb0b5) no-repeat;
+    background: linear-gradient(-20deg, #b88a44, #e39b0d, #b88a44, #e0aa3e) no-repeat;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -73,13 +73,16 @@ h2{
   align-items: center;
   justify-content: center;
 }
-.header__div-faleconosco{
-  width: 30em;
-  background-color: #626367;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  color: #adb0b5;
-  font-size: 1.2em;
+.header__div-h3{
+  line-height: 3em;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+  animation: gradient 10s ease infinite;
+  background: linear-gradient(-20deg, #b88a44, #e39b0d, #b88a44, #e0aa3e) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%; 
+  font-size: 2em;
 }
 .header li{
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
@@ -92,7 +95,7 @@ h2{
 }
 
 .header{
-    animation: slider-header 3s;
+    animation: slider-header 1s;
   }
   @keyframes slider-header{
     from{

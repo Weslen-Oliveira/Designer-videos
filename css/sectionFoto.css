@@ -1,0 +1,51 @@
+.sessao__foto{
+    
+    font-family: "Poller One", serif;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+      /*border: 3px solid white;*/
+    
+}
+.sessao__foto__design{
+    width: 500px;
+    height: 500px;
+}
+.div__foto{
+      /*border: 3px solid white;*/
+      box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.6);
+}
+.div__foto__titulos{
+      /*border: 3px solid white;*/
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.sessao__foto__titulo{
+    padding: 3em;
+    line-height: 1em;
+}
+span{
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    font-size: 4em;
+    animation: gradient 10s ease infinite;
+    background: linear-gradient(-20deg, #b88a44, #e39b0d, #b88a44, #e0aa3e) no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    margin-right: 1em;
+}
+.sessao__div__titulos{
+    /*border: 3px solid white;*/
+    display: flex;
+    align-items: center;
+
+}
+    .sessao__div__titulos p{
+        font-size: 1.5em;
+        text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+        color: darkgray;
+    }
