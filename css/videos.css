@@ -1,12 +1,12 @@
 
 .video-grid {
     padding: 5em;
-    display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     gap: 2em; /* Espaçamento entre os vídeos */
     animation: gradient 10s ease infinite;
     background: linear-gradient(-45deg, #0a0a0a, #161616, #2c2c2c, #363636) no-repeat;
     background-size: 300% 300%;
+    display: none;
   }
 
   .video-grid video {
@@ -27,6 +27,9 @@
   }
   .video-grid{
     animation: slider 1s;
+  }
+  #botao{
+    cursor: pointer;
   }
   @keyframes slider{
     from{
