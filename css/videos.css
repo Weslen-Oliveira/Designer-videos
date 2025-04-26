@@ -1,6 +1,6 @@
 
 .sessao__video__grid{
-  border: 3px solid;
+  
   animation: gradient 10s ease infinite;
   background: linear-gradient(-45deg, #0a0a0a, #161616, #2c2c2c, #363636) no-repeat;
   background-size: 300% 300%;
@@ -16,7 +16,7 @@
   }
 
   .video-grid video {
-    border: 3px solid  #adb0b5;
+    border: 3px solid  #e0aa3e;
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -46,14 +46,4 @@
         opacity: 1;
         translate: 0 0;
     }
-  }
-  @media (max-width: 1500px){
-    .video-grid{
-      gap: 1em;
-    }
-    .video-grid video{
-    
-        
-    }
-
   }
