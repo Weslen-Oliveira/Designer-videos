@@ -24,9 +24,7 @@ html, body {
     background-size: 300% 300%;
  
   }
-  .img-logo, .mobile__menu{
-    display: none;
-  }
+
  
   .botao-inicio{
     font-size: 0.3em;
@@ -52,4 +50,3 @@ html, body {
         background-position: 0 50%;
     }
 }
-

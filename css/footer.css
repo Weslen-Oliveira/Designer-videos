@@ -8,9 +8,9 @@
     padding-block: 1em;
     color: #adb0b5;
 }
-
-@media (max-width: 1500px){
-    
+.footer a{
+    color: white;
 }
+
 
 

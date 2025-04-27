@@ -13,13 +13,29 @@
       });
     });
 
-    //Abrir o display de videos 
-    const displayVideos = document.getElementById('videos');
-    const botaoVideos = document.getElementById('botao');
+//Menu mobile em telas abaixo de 820px
+const botao = document.getElementById('img-logo');
+const mobileMenu = document.getElementById('mobile-menu');
 
-    botaoVideos.addEventListener('click', function(){      
-      let displayAtualVideos = window.getComputedStyle(displayVideos);
-      if(displayAtualVideos.display === 'none'){
-        displayVideos.style.display = 'grid';
-      }
-    })
+
+ botao.addEventListener('click', function(){
+ 
+  let menuVisivel = window.getComputedStyle(mobileMenu).display;
+  if(menuVisivel === 'none'){
+    mobileMenu.style.display = 'block';
+  }else {
+    mobileMenu.style.display = 'none';
+  }
+console.log(mobileMenu)
+
+ })
+
+
+
+ window.addEventListener('scroll', function(){
+
+  let menuMobile = window.getComputedStyle(mobileMenu).display;
+  if(menuMobile === 'block'){
+    menuMobile.style.display = 'none';
+  }
+ })
