@@ -5,7 +5,7 @@
 
     span{
         margin-right: 0em;
-        font-size: 2em;
+        font-size: 1.5em;
     }
     .sessao__section__titulo{
         font-size: 3em;
@@ -16,6 +16,9 @@
     .sessao__section__logo p{
         display: none;
       
+    }
+    .swiper, .carrossel-mobile{
+        display: none;
     }
 }
 @media (max-width: 1200px){
@@ -46,6 +49,9 @@
         padding-inline: 0.5em;
         gap: 1em;
     }
+    .swiper, .carrossel-mobile{
+        display: none;
+    }
 }
 @media (max-width: 1000px){
     .img-logo, .mobile__menu{
@@ -64,6 +70,9 @@
     }
     .sessao__video__grid .video-grid {
         padding: 3em;
+    }
+    .swiper, .carrossel-mobile{
+       display: none;
     }
 }
 @media (max-width: 820px){
@@ -84,9 +93,11 @@
     }
 
     .mobile, .img-logo {
-      display: block;      
+      display: block !important; 
+      width: 5em;
+      height: 5em;     
     }
-    .efeito h1{
+    .efeito h1{/*titulo header*/
         font-size: 3em;
         line-height: 3em;
     }
@@ -117,16 +128,24 @@
     }
     .sessao__video__grid .video-grid {
         grid-template-columns: repeat(1, 1fr);
+        display: none;
     }
     .sessao__section__titulo{
         font-size: 1.3em;
     }
     .sessao__section__logo{
-        gap: 2em;
+        gap: 3em;
         padding-block: 1em;
+    }
+    .sessao__section__whatsapp{
+        width: 80%;
     }
     .header__div{
         padding-block: 0;
+        display: none;
+    }
+    .carrossel-mobile{
+        display: block;
     }
     .header__div-faleconosco{
         font-size: 1.2em;
@@ -136,5 +155,33 @@
     }
     .footer p{
         display: none;
+    }
+}
+@media (max-width: 450px){
+    .sessao__section__titulo{
+        font-size: 1em;
+    }
+    .efeito{
+        font-size: 0.5em;
+    }
+    .sessao__div__titulos p{
+        padding: 0.2em;
+        line-height: 1em;
+        font-size: 0.5em; /*paragrafo da sessao foto*/
+    }
+    span{
+       
+        font-size: 0.8em;
+    }
+    .header__logo img{
+        width: 5em;
+        height: 5em;
+    }
+    .img-logo{
+        width: 5em;
+        height: 5em;
+    }
+    .sessao__section__whatsapp{
+        width: 80%;
     }
 }
