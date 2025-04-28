@@ -156,6 +156,16 @@
     .footer p{
         display: none;
     }
+    .videos{
+        display: block;
+        color: red;
+        background-color: white;
+        border-radius: 100%;
+        --swiper-navigation-size: 30px;
+    }
+    .swiper-pagination{
+        display: none;
+    }
 }
 @media (max-width: 450px){
     .sessao__section__titulo{
