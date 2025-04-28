@@ -87,8 +87,16 @@
     .sessao__video__grid .video-grid, .header__div, .titulo__video, .video {
        display: none;
     }
-    .swiper, .imagens{
-      
+    .carrossel-mobile{
+        display: block;
+        padding: 0; 
+    }
+    .div__video video{
+        padding-block: 3em;
+    }
+    
+    .swiper-slide{
+      padding: 0;
     }
 }
 @media (max-width: 820px){

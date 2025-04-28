@@ -15,3 +15,6 @@
 .swiper-pagination{
     padding-block: 5em;
 }
+.carrossel-mobile{
+    display: none;
+}
