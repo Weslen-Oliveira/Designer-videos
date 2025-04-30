@@ -1,3 +1,13 @@
+@media (max-width: 1700px){
+    .swiper-slide{ /*Imagen do Carrossel*/
+        display: block;
+    }
+    .swiper-slide img{
+        width: 400px;
+        height: 400px;
+    }
+}
+
 @media (max-width: 1500px){
     .efeito h1{
         padding-block: 1em;
@@ -220,5 +230,10 @@
     
     .sessao__section__whatsapp{
         width: 80%;
+    }
+    .swiper-slide img{  /*Imagens do Carrossel de Imagens*/
+        
+        width: 85%;
+        padding: auto;
     }
 }

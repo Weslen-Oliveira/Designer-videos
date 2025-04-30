@@ -34,7 +34,7 @@
     text-align: center;
   }
   .video-grid{
-    animation: slider 1s;
+    animation: slider 0.2s;
   }
   #botao{
     cursor: pointer;
